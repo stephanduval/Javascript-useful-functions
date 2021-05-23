@@ -5,9 +5,11 @@ const MergeSort = (array) => {
      * Description      Takes an array and uses a Merge/Sort Algorithm to order the numbers
      *                  in an array.  Uses the function merge to complete this task.
      * 
+    
      * @param           an array
      * @author:         StephanDDuVal
-     * @Created:         23MAY2021
+     * @Created:        23MAY2021
+     * @efficiency      O(N*log n) 
      * 
      * @Sample Test code:
 const array = [1,2,4,591,392,391,2,5,10,2,1,1,1,20,20]
