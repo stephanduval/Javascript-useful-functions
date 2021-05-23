@@ -1,16 +1,19 @@
+
 const MergeSort = (array) => {
     /**
      * Summary          Organizes numbers in an array in ascending order.
-     * Description      Takes an array and uses a MergeSort Algorithm to order the numbers
-     *                  in an array.
+     * Description      Takes an array and uses a Merge/Sort Algorithm to order the numbers
+     *                  in an array.  Uses the function merge to complete this task.
      * 
      * @param           an array
+     * @author:         StephanDDuVal
+     * @Created:         23MAY2021
      * 
-     * 
-     */
-    
-//  debugger;
-  console.log(array);
+     * @Sample Test code:
+const array = [1,2,4,591,392,391,2,5,10,2,1,1,1,20,20]
+console.log(MergeSort(array)); 
+    */ 
+
  if (array.length < 2) {
    console.log('length is less than 2',array);
    return array;
@@ -19,13 +22,20 @@ const MergeSort = (array) => {
      let left = MergeSort(array.slice(0,middle))
      let right = MergeSort(array.slice(middle))
     return merge(left,right);
-  
- }
+   }
 }
 
-
 const merge = (left,right) => {
- // debugger;
+        /**
+     * Summary          Takes two single arrays and arranges them in numberical order
+     * Description      Iterates along each array comparing the values and adding the lowest value to an
+     *                  array called result. 
+     * 
+     * @param           an array
+     * @author:         StephanDDuVal
+     * Created:         23MAY2021
+     * 
+     */ 
   let result = [];
   let i = 0;
   let j = 0;
@@ -50,7 +60,3 @@ const merge = (left,right) => {
   }
 
 
-  // Test Code:
-  
-const array = [1,2,4,591,392,391,2,5,10,2,1,1,1,20,20]
-console.log(MergeSort(array));
